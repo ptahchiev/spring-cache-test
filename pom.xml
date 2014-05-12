@@ -8,7 +8,7 @@
 	<packaging>jar</packaging>
 	
 	<properties>
-		<spring.version>4.0.4.RELEASE</spring.version>
+		<spring.version>4.1.0.BUILD-SNAPSHOT</spring.version>
 		<spring.data.jpa.version>1.4.1.RELEASE</spring.data.jpa.version>
 		<spring.data.commons.version>1.7.0.M1</spring.data.commons.version>
 		<spring.data.rest.version>2.0.0.M1</spring.data.rest.version>
@@ -73,4 +73,15 @@
             </exclusions>
         </dependency>
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>spring-snapshot</id>
+			<name>Springframework Snapshot Repository</name>
+			<url>http://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 </project>
